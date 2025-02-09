@@ -1,0 +1,325 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* ESTILOS GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Inter" , sans-serif;
+}
+
+
+
+
+
+
+
+/* ESTILOS DE NAVEGAÇÃO E BOTÃO*/
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+section,
+footer{
+padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: black;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.container img{
+    width: auto;
+    height: 80px;
+}
+
+.btn-login{
+    background-color: rgb(53, 171, 207);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn-login:hover{
+    background-color: rgb(47, 127, 141);
+}
+
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+nav ul a:not(.btn-login)::after{
+    content: "";
+    background-color: rgb(52, 134, 189);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+/* ESTILOS DO BANNER 1 */
+
+.banner{
+    display: flex;
+    justify-content:center;
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: rgb(182, 182, 182);
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+.btn-saibamais{
+    background-color: rgb(53, 171, 207);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn-saibamais{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn-saibamais:hover{
+    background-color: rgb(47, 127, 141);
+}
+
+
+@keyframes animate-outline {    
+    from{
+        outline: 0px solid rgb(78, 128, 151);
+    }
+    to{
+        outline: 10px solid rgb(41, 104, 116);
+    }
+}
+
+
+
+/* ESTILOS DO CURRICULO */
+
+.curriculo .container{
+    display: flex;
+    align-items: center;
+}
+
+.curriculo .curriculo-text{
+    width: 50%;
+    padding: 10px 40px;
+}
+
+.curriculo .curriculo-img{
+    width: 50%;
+}
+
+.curriculo .curriculo-text h3{
+    font-size: 53px;
+}
+
+.curriculo .curriculo-text p{
+    margin: 5px 0 10px 0;
+}
+
+.curriculo .curriculo-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn-curriculo{
+    background-color: rgb(53, 171, 207);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn-curriculo:hover{
+    background-color: rgb(47, 127, 141);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos específicos para a página de login */
+
+/* Container do login */
+.login-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz a tela ocupar toda a altura da janela */
+    background: #f1f1f1; /* Cor de fundo para a página */
+    margin: 0;
+    padding: 0;
+}
+
+/* Caixa de login */
+.login-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo dos campos de entrada */
+.textbox {
+    margin-bottom: 20px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Lembrar-me (checkbox) */
+.remember-me {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Estilo do botão de login (sem alterações no seu botão) */
+.btn-login {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ecf02d;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #e6c225;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-login:active {
+    background-color: #337083;
+    transform: translateY(0);
+}
+
+/* Links (esqueceu a senha e cadastrar-se) */
+.links {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #316b91;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
