@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Contato | Jornada Estágio">
+    <title>Contato | Jornada Estágio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" style="background-image: url('img/background-contact.jpg');">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="Logo da Jornada Estágio">
+                </a>
+                <ul class="ul">
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="vagas.html">VAGAS DE ESTÁGIO</a></li>
+                    <li><a href="dicas.html">DICAS</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="contato.html" class="active">CONTATOS</a></li>
+                    <li><a href="login.html" class="btn-login">LOGIN</a></li>
+                </ul>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>FALE CONOSCO</h1>
+                    <p>Tem dúvidas, sugestões ou quer compartilhar sua experiência? Entre em contato conosco!</p>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <section class="contato-form">
+        <div class="container">
+            <h2>Envie sua Mensagem</h2>
+            <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="5" required></textarea>
+
+                <button type="submit" class="btn-saibamais">ENVIAR MENSAGEM</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
